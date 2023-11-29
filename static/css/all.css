@@ -15,6 +15,26 @@ body {
     height: 100vh;
 }
 
+#playButton {
+    border: none;
+    border-radius: 15px;
+    background-color: #F40000;
+    width: 15vw;
+    height: 10vh;
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+}
+
+#playButton:hover {
+    cursor: pointer;
+    background-color: #da0000;
+}
+
+#playButton:active {
+    background-color: #be0000;
+}
+
 #timer {
     display: flex;
     gap: 30px;
