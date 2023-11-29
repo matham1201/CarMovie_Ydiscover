@@ -7,8 +7,20 @@
 
         <link rel="stylesheet" href="../static/css/all.css">
         <link rel="stylesheet" href="../static/css/quiz.css">
+
+        <link rel="stylesheet" href="../scripts/quiz.js">
     </head>
     <body>
-        
+        <div id="timer">
+            <div class="circle">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">20</div>
+            </div>
+        </div>
+        <script src="../scripts/quiz.js"></script>
     </body>
 </html>
