@@ -1,0 +1,44 @@
+h1 {
+    width: 800px;
+    font-weight: 900;
+}
+
+img {
+    margin-top: 35px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.questions {
+    margin-top: 50px;
+}
+
+.answers {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answers button {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    background-color: #bbc4cc;
+    border: 0;
+    border-radius: 10px;
+    width: 800px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.answers button:hover {
+    cursor: pointer;
+    background-color: #a6adb4;
+}
+
+.answers button:nth-child(n+2):nth-child(-n+4) {
+    margin-top: 15px;
+}

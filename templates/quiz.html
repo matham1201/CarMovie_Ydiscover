@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carmovie - Quiz</title>
 
         <link rel="stylesheet" href="../static/css/all.css">
-        <link rel="stylesheet" href="../static/css/quiz.css">
+        <link rel="stylesheet" href="../static/css/quizz.css">
 
-        <link rel="stylesheet" href="../scripts/quiz.js">
+        <link rel="stylesheet" href="../scripts/quizz.js">
     </head>
     <body>
-        <button id="playButton" onclick="playButton();">PLAY</button>
-
-        <div id="timer">
-            <div class="circle">
-                <div class="dots sec_dot"></div>
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70" id="ss"></circle>
-                </svg>
-                <div id="seconds">20</div>
+        <div class="questions">
+            <h1>Quelle est cette voiture ?</h1>
+            <img src="../static/images/Aston_Martin_DB5.png" alt="Aston_Martin_DB5.png">
+            <div class="answers">
+                <button>Aston Martin DBS</button>
+                <button>Aston Martin V8 Vantage</button>
+                <button>Aston Martin DB5</button>
+                <button>Aston Martin DBS Superleggera</button>
             </div>
         </div>
-        <script src="../scripts/quiz.js"></script>
+        <div class="questions">
+            <h1>Quelle est cette voiture ?</h1>
+            <img src="../static/images/Dodge-charger-rt.png" alt="Dodge-charger-rt.png">
+            <div class="answers">
+                <button>Dodge Charger RT 1970</button>
+                <button>Dodge Challenger Hellcat</button>
+                <button>Dodge Charger</button>
+                <button>Dodge Durango</button>
+            </div>
+        </div>
+        <div class="questions">
+            <h1>En quel année est sorti cette voiture ?</h1>
+            <img src="../static/images/Chevrolet_Corvette_Grand_Sport-1963.png" alt="Chevrolet-Corvette-Grand-Sport-1963.png">
+            <div class="answers">
+                <button>1961</button>
+                <button>1963</button>
+                <button>1966</button>
+                <button>1970</button>
+            </div>
+        </div>
     </body>
 </html>
