@@ -1,30 +1,31 @@
-h1 {
-    width: 800px;
-    font-weight: 900;
-}
-
-img {
-    margin-top: 35px;
-    width: 800px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.questions {
-    margin-top: 50px;
-}
-
-.answers {
-    margin-top: 35px;
+body {
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.answers button {
+img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    object-fit: cover;
+}
+
+.quizz {
+    width: 800px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.option {
     display: flex;
     align-items: center;
     padding-left: 15px;
-
     background-color: #bbc4cc;
     border: 0;
     border-radius: 10px;
@@ -34,11 +35,32 @@ img {
     font-size: 25px;
 }
 
-.answers button:hover {
+.option:hover {
     cursor: pointer;
     background-color: #a6adb4;
 }
 
-.answers button:nth-child(n+2):nth-child(-n+4) {
+.option:nth-child(n+2):nth-child(-n+4) {
     margin-top: 15px;
+}
+
+#next {
+    float: right;
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #bbc4cc;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#next:hover {
+    cursor: pointer;
+    background-color: #698eb3;
+}
+
+.quiz-finished {
+    text-align: center;
 }

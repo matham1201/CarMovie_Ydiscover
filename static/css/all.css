@@ -2,13 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
-    --clr: #F40000;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background-color: #E5E5E5;
 }
