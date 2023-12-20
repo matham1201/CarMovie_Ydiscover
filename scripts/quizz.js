@@ -39,6 +39,7 @@ const options = [
 
 const correctAnswers = [2, 1, 0, 2, 0, 2, 2, 3, 0, 1]
 let currentQuestion = 0
+let score = 0
 
 function loadQuestion(){
     
@@ -66,6 +67,7 @@ function checkAnswer(selectedIndex){
     if(selectedIndex === correctAnswers[currentQuestion]){
         const selectedButton = document.getElementById("options").querySelectorAll(".option")[selectedIndex]
         selectedButton.style.backgroundColor = "#689F38"
+        score++
 
     } else {
         const selectedButton = document.getElementById("options").querySelectorAll(".option")[selectedIndex]
@@ -81,10 +83,11 @@ function loadNextQuestion(){
 
     } else {
         document.getElementById("next").style.display = "none"
-        document.getElementById("question").classList.add("quiz-finished")
+        document.getElementById("question").classList.add("text-center")
         document.getElementById("question").innerText = "Quiz terminé!"
         document.getElementById("options").innerHTML = ""
-        document.getElementById("result-message").innerText = ""
+        document.getElementById("score").classList.add("text-center");
+        document.getElementById("score").innerText = score + "/" + questions.length
     }
 }
 
