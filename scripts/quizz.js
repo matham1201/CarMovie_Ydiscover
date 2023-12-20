@@ -63,16 +63,17 @@ function loadQuestion(){
 }
 
 function checkAnswer(selectedIndex){
+    const selectedButton = document.getElementById("options").querySelectorAll(".option")[selectedIndex]
 
-    if(selectedIndex === correctAnswers[currentQuestion]){
-        const selectedButton = document.getElementById("options").querySelectorAll(".option")[selectedIndex]
+    if (selectedIndex === correctAnswers[currentQuestion]){
         selectedButton.style.backgroundColor = "#689F38"
         score++
 
     } else {
-        const selectedButton = document.getElementById("options").querySelectorAll(".option")[selectedIndex]
         selectedButton.style.backgroundColor = "#D32F2F"
     }
+
+    disableButtons()
 }
 
 function loadNextQuestion(){
@@ -86,9 +87,17 @@ function loadNextQuestion(){
         document.getElementById("question").classList.add("text-center")
         document.getElementById("question").innerText = "Quiz terminé!"
         document.getElementById("options").innerHTML = ""
-        document.getElementById("score").classList.add("text-center");
+        document.getElementById("score").classList.add("text-center")
         document.getElementById("score").innerText = score + "/" + questions.length
     }
+}
+
+function disableButtons(){
+
+    const allButtons = document.querySelectorAll(".option")
+    allButtons.forEach(button => {
+        button.disabled = true
+    })
 }
 
 loadQuestion()
