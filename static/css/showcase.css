@@ -1,0 +1,38 @@
+.car {
+    width: 1250px;
+    margin-top: 50px;
+}
+
+.car .thumbnail img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.car .thumbnail h1, .car .thumbnail h4 {
+    position: relative;
+    top: -100px;
+    margin-left: 50px;
+}
+
+.car .description {
+    position: relative;
+    top: -60px;
+    background-color: #EDF2F6;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.car .description .textes {
+    padding: 35px 45px;
+}
+
+.car .description .textes h1:not(:first-child){
+    margin-top: 50px;
+}
+
+.car .description .textes h4{
+    margin-top: 20px;
+}
+
+.car .description .textes p{
+    margin-top: 5px;
+}
